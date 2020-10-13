@@ -89,7 +89,7 @@ function Home() {
       .then((res) => res.json())
       .then((result) => {
         const newData = data.map((item) => {
-          if (item._id === result._id) {
+          if (item._id == result._id) {
             return result;
           } else {
             return item;
@@ -98,10 +98,6 @@ function Home() {
         setData(newData);
       })
       .catch((err) => console.log(err));
-  };
-
-  const reset = (e) => {
-    myComments(e.value === "");
   };
 
   const deletePost = (postId) => {
@@ -223,23 +219,15 @@ function Home() {
                   <h6>{item.title}</h6>
                   <p>{item.body}</p>
                   {item.comments.map((record) => {
+                    console.log(record);
                     return (
                       <div className='comment-sec'>
                         <h6 key={record._id}>
                           <span style={{ fontWeight: "600" }}>
-                            {record.postedBy.name}
+                            {/* {record.postedBy.name} */}
                           </span>{" "}
                           {record.text}
                         </h6>
-                        {item.postedBy._id === state._id && (
-                          <i
-                            className='material-icons'
-                            style={{ cursor: "pointer" }}
-                            onClick={() => deleteComment(item._id)}
-                          >
-                            delete
-                          </i>
-                        )}
                       </div>
                     );
                   })}
