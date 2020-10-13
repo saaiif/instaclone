@@ -1,0 +1,33 @@
+.main-signup{
+  margin-top: calc(100vh / 10);
+}
+.signup-card {
+  margin: 10px auto !important;
+  padding: 20px;
+  max-width: 400px;
+}
+.signup-card > input {
+  margin: 15px 0px !important;
+}
+.signup-card > img {
+  width: 120px;
+  object-fit: cover;
+}
+.signup-card > .mybtn {
+  width: 100%;
+  background-color: #e4405f;
+}
+.signup-card input[type="text"]:focus {
+  border-bottom: 1px solid #ea4c89 !important;
+  box-shadow: 0 1px 0 0 #ea4c89 !important;
+}
+.signup-question {
+  font-size: 16px;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .signup-card {
+    width: 340px;
+    margin: 0 auto;
+  }
+}

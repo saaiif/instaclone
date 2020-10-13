@@ -1,0 +1,32 @@
+.main-signin {
+  margin-top: calc(100vh / 5);
+}
+
+.signin-card {
+  margin: 10px auto !important;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px !important;
+  text-align: center;
+}
+.signin-card > input {
+  margin: 15px 0px !important;
+}
+.signin-card > img {
+  width: 120px;
+}
+.signin-card > .mybtn {
+  width: 100%;
+  background-color: #e4405f;
+}
+
+.signin-question {
+  font-size: 16px;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .signin-card {
+    width: 340px;
+    margin: 0 auto;
+  }
+}

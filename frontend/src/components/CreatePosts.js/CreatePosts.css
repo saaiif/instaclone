@@ -1,0 +1,17 @@
+.createpost-wrapper {
+  margin-top: calc(100vh / 5);
+}
+
+.createpost-card {
+  max-width: 750px;
+  margin: 10px auto;
+  padding: 20px;
+  height: max-content;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .createpost-card {
+    width: 340px;
+    margin: 0 auto;
+  }
+}
